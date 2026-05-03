@@ -6,7 +6,7 @@ const financeOptions = [
   {
     icon: CarIcon,
     title: "New Car Finance",
-    desc: "Own your brand-new vehicle with affordable monthly installments and competitive rates.",
+    desc: "Own your brand-new Kia or Hyundai with affordable monthly installments and competitive rates.",
     features: [
       "Low down payment options",
       "Flexible tenure (12–84 months)",
@@ -17,7 +17,7 @@ const financeOptions = [
   {
     icon: KeyIcon,
     title: "Used Car Finance",
-    desc: "Reliable financing for pre-owned vehicles with easy eligibility criteria.",
+    desc: "Reliable financing for pre-owned vehicles including popular Kia and Hyundai models with easy eligibility criteria.",
     features: [
       "Financing for dealer & individual sellers",
       "Flexible EMI plans",

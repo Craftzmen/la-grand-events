@@ -17,20 +17,24 @@ export function FinanceIntro() {
               Drive Now, <span className="text-amber">Pay Later</span>
             </h2>
             <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-              Whether you're buying new, used, or looking to refinance, we offer
-              flexible financing options to get you on the road with confidence. Our partnerships with top lenders ensure competitive rates.
+              Specializing in personalized financing for <span className="font-bold text-foreground">Kia and Hyundai</span>, we offer
+              flexible options to get you behind the wheel of your dream car. Whether it's a new EV6 or a reliable Tucson, our partnerships with top lenders ensure competitive rates tailored to your needs.
             </p>
           </div>
         </ScrollReveal>
         
         <ScrollReveal direction="right">
-          <div className="relative h-[400px] w-full border border-border">
+          <div className="relative h-[450px] w-full border border-border overflow-hidden">
             <Image 
-              src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1200"
-              alt="Finance Consultation"
+              src="https://images.unsplash.com/photo-1718780138801-d93ebf484827?q=80&w=2531&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Kia EV6"
               fill
-              className="object-cover grayscale-[0.2]"
+              className="object-cover transition-transform duration-700 hover:scale-105"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />
+            <div className="absolute bottom-6 left-6">
+              <span className="bg-amber px-3 py-1 text-xs font-bold uppercase tracking-wider text-navy">Featured: Kia EV6</span>
+            </div>
             <div className="absolute -bottom-6 -right-6 h-32 w-32 bg-navy -z-10 dark:bg-amber" />
           </div>
         </ScrollReveal>

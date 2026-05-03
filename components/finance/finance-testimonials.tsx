@@ -4,12 +4,12 @@ import { ScrollReveal } from "@/components/scroll-reveal"
 
 const testimonials = [
   {
-    text: "The approval was faster than I expected. I drove my new car home within days! Highly professional.",
+    text: "Getting my Kia EV6 through Prime Auto Deals was a breeze. The approval was faster than I expected, and the rates were unbeatable!",
     author: "James M.",
     rating: 5,
   },
   {
-    text: "Transparent process and no hidden charges. Highly recommended for quick and easy financing.",
+    text: "I was looking for a Hyundai Tucson and the team here made the financing so easy. Transparent process and no hidden charges. Highly recommended!",
     author: "Elena R.",
     rating: 5,
   },
