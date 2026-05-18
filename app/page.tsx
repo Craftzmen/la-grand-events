@@ -3,34 +3,35 @@ import { Hero } from "@/components/home/hero"
 import { HomeServices } from "@/components/home/services-section"
 import { AboutSnapshot } from "@/components/home/about-snapshot"
 import { ProcessSection } from "@/components/home/process-section"
+import { GallerySection } from "@/components/home/gallery-section"
 import { TestimonialsSection } from "@/components/home/testimonials-section"
 import { CtaBanner } from "@/components/home/cta-banner"
 
 export const metadata: Metadata = {
-  title: 'Prime Auto Deals | Premium Auto Care in Brooklyn, NY',
+  title: 'La Grand Events | Premium Event Planning in Brooklyn, NY',
   description:
-    'Experience the best in auto repair and maintenance. At Prime Auto Deals, we combine expertise with transparency. From engine diagnostics to brake repair, we keep your car running at its peak.',
+    'Experience the best in event management and luxury weddings. At La Grand Events, we combine creativity with pristine organization to make your events spectacular.',
   keywords: [
-    'Brooklyn car care',
-    'expert auto repair',
-    'mechanic service',
-    'engine diagnostic',
-    'brake repair Brooklyn',
-    'oil change service',
-    'car maintenance specialists',
-    'reliable car deals',
+    'Brooklyn event planning',
+    'expert wedding coordination',
+    'luxury party planner',
+    'venue selection',
+    'wedding planning Brooklyn',
+    'corporate gala management',
+    'event design specialists',
+    'luxury event planners',
   ],
   openGraph: {
-    title: 'Prime Auto Deals - Your Trusted Auto Care Partner',
+    title: 'La Grand Events - Your Trusted Event Planning Partner',
     description:
-      'Step into the future of automotive care. Our experts in Brooklyn provide top-tier repair and maintenance.',
+      'Step into luxury event management. Our experts in Brooklyn provide top-tier planning and coordination.',
     url: '/',
     type: 'website',
   },
   twitter: {
-    title: 'Prime Auto Deals - Premium Auto Care',
+    title: 'La Grand Events - Premium Event Planning',
     description:
-      'Where technology meets expertise in automotive repair.',
+      'Where creativity meets expertise in event management.',
   },
   alternates: {
     canonical: '/',
@@ -41,9 +42,10 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <HomeServices />
       <AboutSnapshot />
+      <HomeServices />
       <ProcessSection />
+      <GallerySection />
       <TestimonialsSection />
       <CtaBanner />
     </>

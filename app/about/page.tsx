@@ -7,30 +7,30 @@ import { AboutValues } from "@/components/about/about-values"
 import { AboutCta } from "@/components/about/about-cta"
 
 export const metadata: Metadata = {
-  title: 'About Prime Auto Deals | Our Story & Values',
+  title: 'About La Grand Events | Our Story & Values',
   description:
-    'Since 2009, Prime Auto Deals has been serving Brooklyn with high-quality automotive solutions. Learn more about our mission to provide transparent and expert auto care.',
+    'Since 2009, La Grand Events has been serving Brooklyn with high-quality event planning solutions. Learn more about our mission to provide transparent and expert wedding coordination.',
   keywords: [
-    'about Prime Auto Deals',
-    'car maintenance history',
-    'mechanic team',
-    'automotive solution and service',
-    'trusted car dealer Brooklyn',
-    'automotive expert team',
-    'customer service auto care',
-    'Brooklyn car specialists',
+    'about La Grand Events',
+    'party planning history',
+    'event coordinator team',
+    'wedding planning solution and service',
+    'trusted event planner Brooklyn',
+    'event management expert team',
+    'customer service event care',
+    'Brooklyn event specialists',
   ],
   openGraph: {
-    title: 'About Prime Auto Deals - Our Commitment to Quality',
+    title: 'About La Grand Events - Our Commitment to Quality',
     description:
-      'Step into the story of Prime Auto Deals. From high-quality vehicles to expert automotive services.',
+      'Step into the story of La Grand Events. From spectacular venues to expert coordination services.',
     url: '/about',
     type: 'website',
   },
   twitter: {
-    title: 'About Prime Auto Deals - Our Commitment',
+    title: 'About La Grand Events - Our Commitment',
     description:
-      'Step into the story of Prime Auto Deals and our commitment to quality auto care.',
+      'Step into the story of La Grand Events and our commitment to unforgettable event experiences.',
   },
   alternates: {
     canonical: '/about',

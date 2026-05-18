@@ -4,12 +4,12 @@ import { ScrollReveal } from "@/components/scroll-reveal"
 import Link from "next/link"
 
 const hours = [
-  { day: "Monday", time: "8:00 AM – 6:00 PM" },
-  { day: "Tuesday", time: "8:00 AM – 6:00 PM" },
-  { day: "Wednesday", time: "8:00 AM – 6:00 PM" },
-  { day: "Thursday", time: "8:00 AM – 6:00 PM" },
-  { day: "Friday", time: "8:00 AM – 6:00 PM" },
-  { day: "Saturday", time: "8:00 AM – 6:00 PM" },
+  { day: "Monday", time: "9:00 AM – 6:00 PM" },
+  { day: "Tuesday", time: "9:00 AM – 6:00 PM" },
+  { day: "Wednesday", time: "9:00 AM – 6:00 PM" },
+  { day: "Thursday", time: "9:00 AM – 6:00 PM" },
+  { day: "Friday", time: "9:00 AM – 6:00 PM" },
+  { day: "Saturday", time: "By Appointment" },
   { day: "Sunday", time: "Closed" },
 ]
 
@@ -67,15 +67,15 @@ export function ContactSidebar() {
           <div className="absolute inset-0 border border-white/10 m-2" />
           <div className="relative z-10">
             <PhoneIcon className="mx-auto mb-4 size-10 text-amber" />
-            <h3 className="mb-2 text-2xl font-bold text-white uppercase tracking-wider">Emergency?</h3>
+            <h3 className="mb-2 text-2xl font-bold text-white uppercase tracking-wider">Last-Minute Soirée?</h3>
             <p className="mb-8 text-base text-white/60">
-              Call us for immediate assistance
+              Call our priority line for expedited planning
             </p>
             <Button
               asChild
               className="w-full h-14 rounded-none bg-amber text-base text-navy font-bold hover:bg-amber-light"
             >
-              <Link href="tel:+18883968739" title="Call (888) 396-8739">Call (888) 396-8739</Link>
+              <Link href="tel:+18022420583" title="Call 802 242 0583">Call 802 242 0583</Link>
             </Button>
           </div>
         </div>

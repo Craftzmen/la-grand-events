@@ -6,30 +6,30 @@ import { ContactForm } from "@/components/contact/contact-form"
 import { ContactSidebar } from "@/components/contact/contact-sidebar"
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Prime Auto Deals in Brooklyn, NY',
+  title: 'Contact Us | La Grand Events in Brooklyn, NY',
   description:
-    'Get in touch with the automotive experts at Prime Auto Deals. Visit our Brooklyn location, call us, or book an appointment online for reliable car repair and care.',
+    'Get in touch with the event experts at La Grand Events. Visit our Brooklyn location, call us, or book an appointment online for complete event planning and wedding coordination.',
   keywords: [
-    'contact Prime Auto Deals',
-    'mechanic in Brooklyn',
-    'car repair location',
-    'book car appointment',
-    'auto repair number',
-    'emergency car repair',
-    'automotive service contact',
-    'customer Support auto care',
+    'contact La Grand Events',
+    'event planner in Brooklyn',
+    'wedding coordination location',
+    'book event consultation',
+    'event management number',
+    'last-minute party planning',
+    'event service contact',
+    'customer Support event planning',
   ],
   openGraph: {
-    title: 'Contact Us - Get in Touch with Auto Care Experts',
+    title: 'Contact Us - Get in Touch with Event Planning Experts',
     description:
-      'Step into the solution. Visit our Brooklyn office for quality car care and repairs.',
+      'Step into the solution. Visit our Brooklyn office for quality event planning and wedding coordination.',
     url: '/contact',
     type: 'website',
   },
   twitter: {
-    title: 'Contact Us - Auto care at Your Fingertips',
+    title: 'Contact Us - Event planning at Your Fingertips',
     description:
-      'Reach out to Prime Auto Deals for all your automotive needs. We are here to help.',
+      'Reach out to La Grand Events for all your celebration needs. We are here to help.',
   },
   alternates: {
     canonical: '/contact',

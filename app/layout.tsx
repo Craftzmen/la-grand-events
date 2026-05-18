@@ -14,30 +14,30 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Prime Auto Deals | Expert Auto Repair & Financing in Brooklyn, NY',
+  title: 'La Grand Events | Expert Event Management & Wedding Planning in Brooklyn, NY',
   description:
-    'Quality auto repair, maintenance, and financing services in Brooklyn, NY. Expert mechanics, transparent pricing, and convenient doorstep service. Trusted by 500+ car owners.',
+    'Quality event management, wedding planning, and celebration coordination services in Brooklyn, NY. Expert planners, transparent pricing, and unforgettable experiences. Trusted by 500+ happy clients.',
   keywords: [
-    'auto repair Brooklyn',
-    'car maintenance NY',
-    'car financing Brooklyn',
-    'expert mechanics',
-    'auto diagnostic tools',
-    'car repair service',
-    'affordable auto deals',
-    'professional car care',
+    'event management Brooklyn',
+    'wedding planning NY',
+    'party coordination Brooklyn',
+    'expert event planners',
+    'celebration planning tools',
+    'wedding coordinator service',
+    'affordable event deals',
+    'professional event care',
   ],
   openGraph: {
-    title: 'Prime Auto Deals - Expert Auto Repair & Financing in Brooklyn',
+    title: 'La Grand Events - Expert Event Management & Wedding Planning in Brooklyn',
     description:
-      'Quality auto repair, maintenance, and financing. Step into the future of automotive care where technology meets expertise.',
+      'Quality event management, wedding planning, and party coordination. Step into a world of unforgettable moments where imagination meets expertise.',
     url: '/',
     type: 'website',
   },
   twitter: {
-    title: 'Prime Auto Deals - Expert Auto Care',
+    title: 'La Grand Events - Expert Event Planning',
     description:
-      'Step into the future of automotive care with expert repair and financing technology.',
+      'Step into a world of unforgettable moments with expert event and wedding planning.',
   },
   alternates: {
     canonical: '/',

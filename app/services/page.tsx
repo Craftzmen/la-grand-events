@@ -5,30 +5,30 @@ import { ServicesBooking } from "@/components/services/services-booking"
 import { ServicesEmergencyCta } from "@/components/services/services-emergency-cta"
 
 export const metadata: Metadata = {
-  title: 'Auto Repair & Maintenance Services in Brooklyn | Prime Auto Deals',
+  title: 'Event Management & Wedding Planning Services | La Grand Events',
   description:
-    'Professional automotive repair services. Performance upgrades, computer diagnostics, brake repairs, and air conditioning service. Keeping your car reliable and efficient.',
+    'Professional event management and planning services in Brooklyn. Wedding coordination, corporate events, venue selection, and day-of management. Making your events truly spectacular.',
   keywords: [
-    'auto repair services',
-    'car maintenance specialists',
-    'performance car upgrades',
-    'advanced engine diagnostics',
-    'brake service Specialists',
-    'AC repair Brooklyn',
-    'lube and oil changes',
-    'expert auto mechanic Service',
+    'event management services',
+    'wedding planning specialists',
+    'corporate event coordination',
+    'venue selection experts',
+    'day-of coordination service',
+    'party planning Brooklyn',
+    'custom event design',
+    'expert event planner service',
   ],
   openGraph: {
-    title: 'Professional Auto Repair & Maintenance Services',
+    title: 'Professional Event Management & Planning Services',
     description:
-      'Step into quality. Our expert technicians in Brooklyn provide comprehensive care for your vehicle.',
+      'Step into elegance. Our expert planners in Brooklyn provide comprehensive coordination for your special events.',
     url: '/services',
     type: 'website',
   },
   twitter: {
-    title: 'Auto Repair & Maintenance - Professional Services',
+    title: 'Event Management & Planning - Professional Services',
     description:
-      'Keep your car performing at its best with expert repair and care.',
+      'Ensure your event runs flawlessly with expert planning and coordination.',
   },
   alternates: {
     canonical: '/services',

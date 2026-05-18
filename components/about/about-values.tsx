@@ -6,22 +6,22 @@ const values = [
   {
     icon: ShieldCheckIcon,
     title: "Trust & Integrity",
-    desc: "We operate with full transparency. Every diagnosis, every quote, every repair — done with honesty.",
+    desc: "We operate with full transparency. Every consultation, every proposal, every execution — carefully managed with honesty.",
   },
   {
     icon: HeartIcon,
-    title: "Customer First",
-    desc: "Your satisfaction drives us. We listen, we understand, and we deliver solutions tailored to your needs.",
+    title: "Client First",
+    desc: "Your vision drives our creativity. We listen, we understand, and we deliver bespoke designs tailored exclusively to your narrative.",
   },
   {
     icon: TrophyIcon,
     title: "Excellence",
-    desc: "We hold ourselves to the highest standards. Quality workmanship is not optional — it's our promise.",
+    desc: "We hold ourselves to the highest luxury standards. Flawless execution is not optional — it's the baseline of our service.",
   },
   {
     icon: UsersIcon,
     title: "Community",
-    desc: "We're proud to serve Brooklyn and beyond. Supporting our community is part of who we are.",
+    desc: "We're deeply rooted in New York's elite vendor network, fostering partnerships that bring unparalleled value to your events.",
   },
 ]
 
@@ -35,8 +35,8 @@ export function AboutValues() {
               <TargetIcon className="size-3.5 text-amber" />
               Our Core Values
             </div>
-            <h2 className="text-4xl font-extrabold tracking-tight md:text-5xl text-navy dark:text-white">
-              What Drives Us <span className="text-amber">Every Day</span>
+            <h2 className="text-4xl font-extrabold tracking-tight md:text-5xl text-navy dark:text-white font-serif">
+              What Drives Our <span className="text-amber italic font-light">Passion</span>
             </h2>
           </div>
         </div>
@@ -49,8 +49,8 @@ export function AboutValues() {
               <div className="mb-6 flex size-14 items-center justify-center bg-navy text-amber">
                 <v.icon className="size-6" />
               </div>
-              <h3 className="mb-3 text-xl font-bold">{v.title}</h3>
-              <p className="text-base leading-relaxed text-muted-foreground">
+              <h3 className="mb-3 text-xl font-bold font-serif">{v.title}</h3>
+              <p className="text-base leading-relaxed text-muted-foreground font-light">
                 {v.desc}
               </p>
             </div>

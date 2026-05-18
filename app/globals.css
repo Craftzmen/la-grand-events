@@ -5,14 +5,12 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-    /* ── Core Brand Colors (Charcoal & Electric Blue) ── */
-    --navy: 224 71% 4%;
-    /* Deep Charcoal Black */
-    --navy-light: 224 20% 12%;
-    --amber: 221 83% 53%;
-    /* Premium Cobalt Blue */
-    --amber-light: 221 83% 65%;
-    --amber-dark: 221 83% 40%;
+    /* ── Core Brand Colors (Navy & Gold) ── */
+    --navy: 240 5.9% 4.5%; /* Zinc 950 #09090b - Replaced original deep blue */
+    --navy-light: 240 5% 10%;
+    --amber: 45 93% 47%; /* Elegant Gold #E6B309 */
+    --amber-light: 45 93% 60%;
+    --amber-dark: 45 93% 35%;
 
     /* ── Shadcn Design Tokens ── */
     --background: hsl(0 0% 100%);

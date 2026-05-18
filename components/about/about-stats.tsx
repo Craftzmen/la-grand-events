@@ -9,7 +9,7 @@ export function AboutStats() {
         {[
           { value: 2009, label: "Year Founded", suffix: "" },
           { value: 15, label: "Years Experience", suffix: "+" },
-          { value: 5000, label: "Cars Serviced", suffix: "+" },
+          { value: 5000, label: "events Serviced", suffix: "+" },
           { value: 98, label: "Satisfaction Rate", suffix: "%" },
         ].map((stat, i) => (
           <ScrollReveal key={stat.label} delay={i * 100} className="p-10 text-center bg-card hover:bg-muted/50 transition-colors">

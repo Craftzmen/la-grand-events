@@ -5,14 +5,14 @@ import { RefundPolicyContent } from "@/components/policies/refund-policy-content
 export const metadata: Metadata = {
   title: 'Refund Policy | Quality Service Guarantee',
   description:
-    'Read about our refund and return policies at Prime Auto Deals. We are committed to providing top-quality automotive services and customer satisfaction.',
+    'Read about our refund and cancellation policies at La Grand Events. We are committed to providing top-quality event coordination and customer satisfaction.',
   keywords: [
-    'refund policy car care',
+    'refund policy event planning',
     'service cancellation terms',
-    'car repair guarantee',
-    'refund process auto repair',
-    'automotive service refund',
-    'prime auto deals refund',
+    'wedding planning guarantee',
+    'refund process event manager',
+    'event service refund',
+    'la grand events refund',
   ],
   openGraph: {
     title: 'Refund Policy - Satisfaction Guarantee',

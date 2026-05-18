@@ -1,4 +1,4 @@
-import { PhoneIcon, ArrowRightIcon } from "lucide-react"
+import { CalendarIcon, ArrowRightIcon } from "lucide-react"
 import { SectionWrapper } from "@/components/layout/section-wrapper"
 import { ScrollReveal } from "@/components/scroll-reveal"
 import { Button } from "@/components/ui/button"
@@ -10,6 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { Input } from "@/components/ui/input"
 
 export function ServicesBooking() {
   return (
@@ -17,22 +18,21 @@ export function ServicesBooking() {
       <div className="grid items-center gap-16 lg:grid-cols-2">
         <ScrollReveal direction="left">
           <div className="mb-4 inline-flex items-center gap-2 border border-border bg-white px-3 py-1 text-xs font-semibold tracking-widest text-foreground uppercase dark:bg-black">
-            <PhoneIcon className="size-3.5 text-amber" />
-            Book Now
+            <CalendarIcon className="size-3.5 text-amber" />
+            Inquire
           </div>
-          <h2 className="text-4xl font-extrabold tracking-tight md:text-5xl text-navy dark:text-white mb-6">
-            Schedule Your <span className="text-amber">Service</span>
+          <h2 className="text-4xl font-extrabold tracking-tight md:text-5xl text-navy dark:text-white mb-6 font-serif">
+            Schedule a <span className="text-amber italic font-light">Consultation</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Select your vehicle brand and the service you need, and we&apos;ll
-            take care of the rest. Quick, easy, no-hassle booking.
+            Tell us about your upcoming occasion, and a dedicated coordinator will connect with you to discuss bringing your vision to life.
           </p>
           <ul className="space-y-4">
             {[
-              "Free initial inspection",
-              "Transparent cost estimates before work begins",
-              "Certified mechanics with years of experience",
-              "Satisfaction guaranteed on every service",
+              "Complimentary 45-minute vision session",
+              "Access to exclusive venue portfolios",
+              "Bespoke transparent proposals",
+              "Uncompromising privacy and discretion",
             ].map((item, i) => (
               <li key={i} className="flex items-center gap-4 border border-border p-3 bg-white dark:bg-card">
                 <div className="size-2 shrink-0 bg-amber" />
@@ -45,50 +45,56 @@ export function ServicesBooking() {
         <ScrollReveal direction="right">
           <div className="border border-border bg-white p-10 dark:bg-card">
             <h3 className="mb-8 text-2xl font-bold uppercase tracking-wide text-navy dark:text-white border-b-2 border-amber inline-block pb-2">
-              Booking Form
+              Event Inquiry
             </h3>
             <div className="space-y-6">
-              <div>
-                <label className="mb-2 block text-sm font-bold uppercase tracking-wider text-foreground/80">
-                  Vehicle Brand
-                </label>
-                <Select>
-                  <SelectTrigger className="h-12 rounded-none border border-border focus:ring-0 focus:border-amber bg-white dark:bg-black">
-                    <SelectValue placeholder="Select brand" />
-                  </SelectTrigger>
-                  <SelectContent className="rounded-none border-border">
-                    <SelectGroup>
-                      <SelectItem value="bmw">BMW</SelectItem>
-                      <SelectItem value="toyota">Toyota</SelectItem>
-                      <SelectItem value="honda">Honda</SelectItem>
-                      <SelectItem value="ford">Ford</SelectItem>
-                      <SelectItem value="other">Other</SelectItem>
-                    </SelectGroup>
-                  </SelectContent>
-                </Select>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="mb-2 block text-sm font-bold uppercase tracking-wider text-foreground/80">
+                    Event Type
+                  </label>
+                  <Select>
+                    <SelectTrigger className="h-12 rounded-none border border-border focus:ring-0 focus:border-amber bg-white dark:bg-black">
+                      <SelectValue placeholder="Select type" />
+                    </SelectTrigger>
+                    <SelectContent className="rounded-none border-border">
+                      <SelectGroup>
+                        <SelectItem value="wedding">Luxury Wedding</SelectItem>
+                        <SelectItem value="corporate">Corporate Gala / Event</SelectItem>
+                        <SelectItem value="milestone">Private Milestone</SelectItem>
+                        <SelectItem value="sourcing">Venue Sourcing Only</SelectItem>
+                        <SelectItem value="other">Other Celebration</SelectItem>
+                      </SelectGroup>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div>
+                  <label className="mb-2 block text-sm font-bold uppercase tracking-wider text-foreground/80">
+                    Target Date
+                  </label>
+                  <Input type="date" className="h-12 rounded-none border border-border focus:ring-0 focus:border-amber bg-white dark:bg-black" />
+                </div>
               </div>
               <div>
                 <label className="mb-2 block text-sm font-bold uppercase tracking-wider text-foreground/80">
-                  Service Type
+                  Estimated Guest Count
                 </label>
                 <Select>
                   <SelectTrigger className="h-12 rounded-none border border-border focus:ring-0 focus:border-amber bg-white dark:bg-black">
-                    <SelectValue placeholder="Select service" />
+                    <SelectValue placeholder="Select gauge" />
                   </SelectTrigger>
                   <SelectContent className="rounded-none border-border">
                     <SelectGroup>
-                      <SelectItem value="diagnostics">Engine Diagnostics ($150 - $400)</SelectItem>
-                      <SelectItem value="oil">Lube, Oil & Filters ($60 - $120)</SelectItem>
-                      <SelectItem value="ac">Air Conditioning Evac ($120 - $350)</SelectItem>
-                      <SelectItem value="brakes">Brake Service ($150 - $450)</SelectItem>
-                      <SelectItem value="performance">Performance Upgrades ($500 - $5,000+)</SelectItem>
-                      <SelectItem value="computer">Computer Diagnostics ($100 - $250)</SelectItem>
+                      <SelectItem value="micro">Intimate (Under 50)</SelectItem>
+                      <SelectItem value="medium">Medium (50 - 150)</SelectItem>
+                      <SelectItem value="large">Large (150 - 300)</SelectItem>
+                      <SelectItem value="grand">Grand (300+)</SelectItem>
                     </SelectGroup>
                   </SelectContent>
                 </Select>
               </div>
               <Button className="mt-4 w-full rounded-none bg-amber px-8 py-6 text-base font-bold text-navy hover:bg-amber-light">
-                Request Appointment
+                Request Consultation
                 <ArrowRightIcon className="ml-2 size-5" />
               </Button>
             </div>

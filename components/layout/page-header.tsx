@@ -8,59 +8,100 @@ interface PageHeaderProps {
 }
 
 export function PageHeader({ title, breadcrumbs, className }: PageHeaderProps) {
+  // Map common pages to their bespoke luxury descriptions to wow the user
+  const getPageDescription = (titleStr: string) => {
+    const t = titleStr.toLowerCase();
+    if (t.includes("about")) {
+      return "Crafting legendary moments and elite celebrations with timeless grandeur, absolute discretion, and unmatched artistic vision."
+    }
+    if (t.includes("service")) {
+      return "A meticulously curated portfolio of ultra-luxury event coordination, bespoke styling, and elite venue management."
+    }
+    if (t.includes("contact")) {
+      return "Step into our world of extraordinary celebrations. Connect with our principal coordinators to begin detailing your vision."
+    }
+    if (t.includes("privacy")) {
+      return "Our absolute commitment to your privacy, personal legacy, and data security. Underpinned by principles of total discretion."
+    }
+    if (t.includes("refund")) {
+      return "Clear parameters, absolute transparency, and professional integrity designed to guarantee absolute peace of mind."
+    }
+    return "Curating bespoke experiences and legendary celebrations tailored precisely to the desires of our distinguished clientele."
+  }
+
+  const description = getPageDescription(title);
+  
+  // Split title into words to create an asymmetrical, haute-couture editorial layout
+  const words = title.split(" ");
+
   return (
     <section
       className={cn(
-        "relative overflow-hidden bg-navy pt-32 pb-16 md:pt-40 md:pb-20",
+        "relative overflow-hidden bg-black pt-40 pb-20 md:pt-48 md:pb-28 border-b border-white/5",
         className
       )}
     >
-      {/* Decorative background pattern */}
-      <div className="absolute inset-0 opacity-[0.04]">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
-            backgroundSize: "40px 40px",
-          }}
-        />
+      {/* Editorial Luxury Grid Overlay */}
+      <div className="absolute inset-0 opacity-[0.02] pointer-events-none">
+        <div className="absolute left-1/3 top-0 bottom-0 w-px bg-white" />
+        <div className="absolute left-2/3 top-0 bottom-0 w-px bg-white" />
       </div>
-      <div className="absolute right-0 top-0 h-64 w-64 rounded-full bg-amber/10 blur-[100px]" />
 
-      <div className="relative mx-auto max-w-[1200px] px-5 md:px-8">
-        {/* Breadcrumbs */}
-        <nav className="mb-4 flex items-center gap-2 text-sm text-white/60">
-          {breadcrumbs.map((crumb, i) => (
-            <span key={i} className="flex items-center gap-2">
-              {i > 0 && (
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-white/30">
-                  <path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              )}
-              {crumb.href ? (
-                <Link
-                  href={crumb.href}
-                  className="transition-colors hover:text-amber"
+
+
+      <div className="relative mx-auto max-w-7xl px-6 md:px-8">
+        <div className="grid gap-10 md:grid-cols-12 items-center">
+          
+          {/* Column 1: Asymmetric Editorial Title (Left 7 Columns) */}
+          <div className="md:col-span-7 space-y-4">
+            <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-amber uppercase">
+              <span className="h-[2px] w-8 bg-amber" />
+              L'Éxpérience Unique
+            </div>
+            
+            <div className="flex flex-col select-none">
+              {words.map((word, i) => (
+                <span
+                  key={i}
+                  className={cn(
+                    "text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-white tracking-tight leading-none",
+                    i % 2 === 1 && "pl-8 sm:pl-16 text-amber italic font-light font-serif"
+                  )}
                 >
-                  {crumb.label}
-                </Link>
-              ) : (
-                <span className="text-amber">{crumb.label}</span>
-              )}
-            </span>
-          ))}
-        </nav>
+                  {word}
+                </span>
+              ))}
+            </div>
+          </div>
 
-        {/* Title */}
-        <h1 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl">
-          {title}
-        </h1>
+          {/* Column 2: Minimalist Info & Breadcrumbs (Right 5 Columns) */}
+          <div className="md:col-span-5 md:pl-8 border-l border-white/10 space-y-6">
+            <p className="text-white/60 text-lg font-light leading-relaxed">
+              {description}
+            </p>
 
-        {/* Accent line */}
-        <div className="mt-5 flex items-center gap-2">
-          <div className="h-1 w-12 rounded-full bg-amber" />
-          <div className="h-1 w-4 rounded-full bg-amber/40" />
+            {/* Ultra-clean Luxury Breadcrumb */}
+            <nav className="flex flex-wrap items-center gap-2 text-xs tracking-widest uppercase text-white/40">
+              {breadcrumbs.map((crumb, i) => (
+                <span key={i} className="flex items-center gap-2">
+                  {i > 0 && (
+                    <span className="text-amber font-light">→</span>
+                  )}
+                  {crumb.href ? (
+                    <Link
+                      href={crumb.href}
+                      className="transition-colors hover:text-white"
+                    >
+                      {crumb.label}
+                    </Link>
+                  ) : (
+                    <span className="text-white/80 font-medium">{crumb.label}</span>
+                  )}
+                </span>
+              ))}
+            </nav>
+          </div>
+
         </div>
       </div>
     </section>

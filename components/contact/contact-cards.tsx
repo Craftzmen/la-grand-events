@@ -7,24 +7,24 @@ const contactCards = [
   {
     icon: MapPinIcon,
     title: "Visit Us",
-    primary: "1916 E 51ST Street 2FL",
-    secondary: "Brooklyn, NY 11234",
+    primary: "2415 SOUTH HOWELL A VE",
+    secondary: "MILWAUKEE, WI 53207, USA",
   },
   {
     icon: PhoneIcon,
     title: "Call Us",
-    primary: "Call (888) 396-8739",
+    primary: "Call 802 242 0583",
     secondary: "24/7 Available",
-    href: "tel:+18883968739",
-    titleAttr: "Call (888) 396-8739",
+    href: "tel:+18022420583",
+    titleAttr: "Call 802 242 0583",
   },
   {
     icon: MailIcon,
     title: "Email Us",
-    primary: "query@primeautodeals.tech",
+    primary: "lagrandeventsllc@gmail.com",
     secondary: "We reply within 24 hours",
-    href: "mailto:query@primeautodeals.tech",
-    titleAttr: "Email us at query@primeautodeals.tech",
+    href: "mailto:lagrandeventsllc@gmail.com",
+    titleAttr: "Email us at lagrandeventsllc@gmail.com",
   },
 ]
 
