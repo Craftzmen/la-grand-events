@@ -26,6 +26,9 @@ export function PageHeader({ title, breadcrumbs, className }: PageHeaderProps) {
     if (t.includes("refund")) {
       return "Clear parameters, absolute transparency, and professional integrity designed to guarantee absolute peace of mind."
     }
+    if (t.includes("finance")) {
+      return "Structured lending support for new purchases, pre-owned vehicles, and refinancing — with clear documentation and transparent approval paths."
+    }
     return "Curating bespoke experiences and legendary celebrations tailored precisely to the desires of our distinguished clientele."
   }
 
