@@ -104,7 +104,7 @@ export function PrivacyPolicyContent() {
         <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 md:p-8 bg-zinc-50 dark:bg-zinc-900/50 mt-4">
           <p className="mb-4 text-zinc-900 dark:text-white font-medium">For any privacy-related inquiries:</p>
           <div className="space-y-2 text-sm">
-            <p>Email: <a href="mailto:lagrandeventsllc@gmail.com" className="text-amber hover:underline">lagrandeventsllc@gmail.com</a></p>
+            <p>Email: <a href="mailto:query@primeautodeals.live" className="text-amber hover:underline">query@primeautodeals.live</a></p>
             <p>Address: 2415 SOUTH HOWELL A VE, MILWAUKEE, WI 53207, United States of America</p>
           </div>
         </div>

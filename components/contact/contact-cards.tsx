@@ -21,10 +21,10 @@ const contactCards = [
   {
     icon: MailIcon,
     title: "Email Us",
-    primary: "lagrandeventsllc@gmail.com",
+    primary: "query@primeautodeals.live",
     secondary: "We reply within 24 hours",
-    href: "mailto:lagrandeventsllc@gmail.com",
-    titleAttr: "Email us at lagrandeventsllc@gmail.com",
+    href: "mailto:query@primeautodeals.live",
+    titleAttr: "Email us at query@primeautodeals.live",
   },
 ]
 

@@ -171,14 +171,14 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="mailto:lagrandeventsllc@gmail.com"
+                  href="mailto:query@primeautodeals.live"
                   className="flex items-center gap-4 group"
                 >
                   <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-amber/10 transition-colors group-hover:bg-amber group-hover:text-black text-amber">
                     <MailIcon className="size-4" />
                   </div>
                   <span className="text-sm text-white/60 transition-colors group-hover:text-amber">
-                    lagrandeventsllc@gmail.com
+                    query@primeautodeals.live
                   </span>
                 </Link>
               </li>

@@ -84,9 +84,9 @@ export function Navbar() {
               <PhoneIcon className="size-3.5" />
               802 242 0583
             </Link>
-            <Link href="mailto:lagrandeventsllc@gmail.com" className="hidden sm:flex items-center gap-2 hover:text-white transition-colors">
+            <Link href="mailto:query@primeautodeals.live" className="hidden sm:flex items-center gap-2 hover:text-white transition-colors">
               <MailIcon className="size-3.5" />
-              lagrandeventsllc@gmail.com
+              query@primeautodeals.live
             </Link>
           </div>
           <span className="hidden md:block text-white/70">

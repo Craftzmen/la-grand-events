@@ -75,7 +75,7 @@ export function RefundPolicyContent() {
       content: (
         <div className="mt-2 text-sm bg-zinc-100 dark:bg-zinc-800/50 rounded-xl p-6 border border-zinc-200 dark:border-zinc-800">
           <p className="mb-2 text-zinc-900 dark:text-white font-medium">To formally request a review for a refund, contact our billing department:</p>
-          <p>Email: <a href="mailto:lagrandeventsllc@gmail.com" className="text-amber hover:underline font-medium">lagrandeventsllc@gmail.com</a></p>
+          <p>Email: <a href="mailto:query@primeautodeals.live" className="text-amber hover:underline font-medium">query@primeautodeals.live</a></p>
           <p className="text-muted-foreground mt-1 text-xs">Please include "Refund Request - [Your Name]" in the subject line.</p>
         </div>
       )
