@@ -1,6 +1,7 @@
 import { SectionWrapper } from "@/components/layout/section-wrapper"
 import Link from "next/link"
 import { AlertCircleIcon, CalendarClockIcon, CheckCircle2Icon, CreditCardIcon, FileWarningIcon, ShieldAlertIcon, InfoIcon } from "lucide-react"
+import { siteContact } from "@/lib/site-contact"
 
 export function RefundPolicyContent() {
   const sections = [
@@ -74,9 +75,14 @@ export function RefundPolicyContent() {
       title: "Initiate a Request",
       content: (
         <div className="mt-2 text-sm bg-zinc-100 dark:bg-zinc-800/50 rounded-xl p-6 border border-zinc-200 dark:border-zinc-800">
-          <p className="mb-2 text-zinc-900 dark:text-white font-medium">To formally request a review for a refund, contact our billing department:</p>
-          <p>Email: <a href="mailto:query@primeautodeals.live" className="text-amber hover:underline font-medium">query@primeautodeals.live</a></p>
-          <p className="text-muted-foreground mt-1 text-xs">Please include "Refund Request - [Your Name]" in the subject line.</p>
+          <p className="mb-2 text-zinc-900 dark:text-white font-medium">To formally request a review for a refund, call our billing department:</p>
+          <a
+            href={siteContact.phoneHref}
+            title={`Call ${siteContact.phoneDisplay}`}
+            className="inline-flex min-h-11 items-center text-sm font-semibold text-amber hover:underline active:opacity-90"
+          >
+            {siteContact.phoneDisplay}
+          </a>
         </div>
       )
     }

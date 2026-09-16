@@ -1,6 +1,7 @@
 import { SectionWrapper } from "@/components/layout/section-wrapper"
 import Link from "next/link"
-import { ShieldCheckIcon, EyeIcon, DatabaseIcon, CookieIcon, Share2Icon, ClockIcon, UserCheckIcon, SettingsIcon, MailIcon } from "lucide-react"
+import { ShieldCheckIcon, EyeIcon, DatabaseIcon, CookieIcon, Share2Icon, ClockIcon, UserCheckIcon, SettingsIcon, PhoneIcon } from "lucide-react"
+import { siteContact } from "@/lib/site-contact"
 
 export function PrivacyPolicyContent() {
   const sections = [
@@ -98,15 +99,19 @@ export function PrivacyPolicyContent() {
       )
     },
     {
-      icon: <MailIcon className="size-6 text-amber" />,
+      icon: <PhoneIcon className="size-6 text-amber" />,
       title: "Contact Privacy Team",
       content: (
         <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 md:p-8 bg-zinc-50 dark:bg-zinc-900/50 mt-4">
-          <p className="mb-4 text-zinc-900 dark:text-white font-medium">For any privacy-related inquiries:</p>
-          <div className="space-y-2 text-sm">
-            <p>Email: <a href="mailto:query@primeautodeals.live" className="text-amber hover:underline">query@primeautodeals.live</a></p>
-            <p>Address: 2415 SOUTH HOWELL A VE, MILWAUKEE, WI 53207, United States of America</p>
-          </div>
+          <p className="mb-4 text-zinc-900 dark:text-white font-medium">For any privacy-related inquiries, call us:</p>
+          <a
+            href={siteContact.phoneHref}
+            title={`Call ${siteContact.phoneDisplay}`}
+            className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-amber hover:underline active:opacity-90"
+          >
+            <PhoneIcon className="size-4" />
+            {siteContact.phoneDisplay}
+          </a>
         </div>
       )
     }

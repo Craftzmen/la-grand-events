@@ -16,9 +16,9 @@ import Image from "next/image"
 import {
   MenuIcon,
   PhoneIcon,
-  MailIcon,
   ChevronDownIcon,
 } from "lucide-react"
+import { siteContact } from "@/lib/site-contact"
 import Logo from '@/app/assets/images/logo-new.png'
 
 const navLinks = [
@@ -80,13 +80,13 @@ export function Navbar() {
       >
         <div className="flex max-w-7xl w-full items-center justify-between px-6 py-2 text-xs text-white/90 font-medium tracking-wide">
           <div className="flex items-center gap-6">
-            <Link href="tel:+18022420583" className="flex items-center gap-2 hover:text-white transition-colors">
-              <PhoneIcon className="size-3.5" />
-              802 242 0583
-            </Link>
-            <Link href="mailto:query@primeautodeals.live" className="hidden sm:flex items-center gap-2 hover:text-white transition-colors">
-              <MailIcon className="size-3.5" />
-              query@primeautodeals.live
+            <Link
+              href={siteContact.phoneHref}
+              title={`Call ${siteContact.phoneDisplay}`}
+              className="flex min-h-11 items-center gap-2 px-2 hover:text-white transition-colors"
+            >
+              <PhoneIcon className="size-3.5 shrink-0" />
+              {siteContact.phoneDisplay}
             </Link>
           </div>
           <span className="hidden md:block text-white/70">
@@ -200,7 +200,7 @@ export function Navbar() {
                   : "border-white/30 text-white hover:bg-white/10"
               )}
             >
-              <Link href="tel:+18022420583" title="Call 802 242 0583">
+              <Link href={siteContact.phoneHref} title={`Call ${siteContact.phoneDisplay}`} className="min-h-11 min-w-11">
                 <PhoneIcon className="size-4" />
               </Link>
             </Button>
@@ -213,7 +213,7 @@ export function Navbar() {
                 "bg-amber hover:bg-amber-light text-black border-0"
               )}
             >
-              <Link href="tel:+18022420583" title="Call 802 242 0583">
+              <Link href={siteContact.phoneHref} title={`Call ${siteContact.phoneDisplay}`}>
                 Get a Quote
               </Link>
             </Button>
@@ -286,9 +286,9 @@ export function Navbar() {
                       asChild
                       className="w-full rounded-full bg-amber text-white font-semibold hover:bg-amber-light shadow-md shadow-amber/20"
                     >
-                      <Link href="tel:+18022420583" title="Call 802 242 0583">
+                      <Link href={siteContact.phoneHref} title={`Call ${siteContact.phoneDisplay}`}>
                         <PhoneIcon className="size-4 mr-2" />
-                        Call 802 242 0583
+                        Call {siteContact.phoneDisplay}
                       </Link>
                     </Button>
                   </div>

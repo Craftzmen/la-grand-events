@@ -3,6 +3,7 @@ import { PhoneIcon } from "lucide-react"
 import { ScrollReveal } from "@/components/scroll-reveal"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { siteContact } from "@/lib/site-contact"
 
 export function ServicesEmergencyCta() {
   return (
@@ -29,7 +30,7 @@ export function ServicesEmergencyCta() {
             size="lg"
             className="rounded-none bg-amber px-10 py-7 text-lg text-navy font-bold hover:bg-amber-light"
           >
-            <Link href="tel:+18022420583" title="Call 802 242 0583">
+            <Link href={siteContact.phoneHref} title={`Call ${siteContact.phoneDisplay}`} className="inline-flex min-h-11 items-center">
               <PhoneIcon className="mr-3 size-5" />
               Call Priority Line
             </Link>

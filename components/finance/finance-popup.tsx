@@ -47,17 +47,18 @@ export function FinancePopup() {
           }`}
         >
           {isMinimized ? (
-            <motion.button
+            <motion.a
               layoutId="popup-container"
-              onClick={() => setIsMinimized(false)}
-              className="relative flex h-14 w-14 items-center justify-center rounded-full bg-amber text-black shadow-lg transition-transform hover:scale-110 active:scale-95 sm:h-16 sm:w-16"
+              href={financeContact.phoneHref}
+              title={`Call ${financeContact.phoneDisplay}`}
+              className="relative flex h-14 w-14 min-h-14 min-w-14 items-center justify-center rounded-full bg-amber text-black shadow-lg transition-transform hover:scale-110 active:scale-95 sm:h-16 sm:w-16"
             >
               <Phone className="h-6 w-6 sm:h-7 sm:w-7" />
               <span className="absolute right-0 top-0 flex h-4 w-4 sm:h-5 sm:w-5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
                 <span className="relative inline-flex h-4 w-4 rounded-full border-2 border-zinc-950 bg-green-500 sm:h-5 sm:w-5" />
               </span>
-            </motion.button>
+            </motion.a>
           ) : (
             <motion.div
               layoutId="popup-container"
@@ -121,7 +122,7 @@ export function FinancePopup() {
                   <a
                     href={financeContact.phoneHref}
                     title={`Call ${financeContact.phoneDisplay}`}
-                    className="relative flex flex-col items-center justify-center rounded-none bg-amber px-4 py-3 transition-all hover:scale-[1.02] hover:bg-amber-light active:scale-95 sm:px-6 sm:py-4"
+                    className="relative flex min-h-11 w-full flex-col items-center justify-center rounded-none bg-amber px-4 py-3 transition-all hover:scale-[1.02] hover:bg-amber-light active:scale-95 sm:px-6 sm:py-4"
                   >
                     <div className="flex items-center gap-2.5 sm:gap-3.5">
                       <span className="text-xl font-black tracking-tighter text-black sm:text-2xl">
@@ -129,13 +130,10 @@ export function FinancePopup() {
                       </span>
                       <Phone className="h-4.5 w-4.5 animate-pulse text-black sm:h-5 sm:w-5" />
                     </div>
+                    <p className="mt-1 text-[8px] font-black uppercase tracking-[0.4em] text-black/50 sm:text-[9px]">
+                      Call Right Now
+                    </p>
                   </a>
-                </div>
-
-                <div className="pt-0.5 text-center">
-                  <p className="text-[8px] font-black uppercase tracking-[0.4em] text-white/30 sm:text-[9px]">
-                    Call Right Now
-                  </p>
                 </div>
               </div>
             </motion.div>

@@ -2,14 +2,13 @@ import Link from "next/link"
 import Image from "next/image"
 import {
   PhoneIcon,
-  MailIcon,
-  MapPinIcon,
   ClockIcon,
   GlobeIcon,
   MessageCircleIcon,
   LinkIcon,
 } from "lucide-react"
 import Logo from '@/app/assets/images/logo-new.png'
+import { siteContact } from "@/lib/site-contact"
 
 const serviceLinks = [
   { label: "Luxury Weddings", href: "/services" },
@@ -50,8 +49,9 @@ export function Footer() {
           </div>
           <div className="z-10 shrink-0">
             <Link
-              href="tel:+18022420583"
-              className="inline-flex items-center justify-center gap-2 rounded-none bg-amber px-8 py-4 text-sm font-bold text-black transition-transform hover:scale-105"
+              href={siteContact.phoneHref}
+              title={`Call ${siteContact.phoneDisplay}`}
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-none bg-amber px-8 py-4 text-sm font-bold text-black transition-transform hover:scale-105 active:opacity-90"
             >
               <PhoneIcon className="size-4" />
               Get a Free Quote
@@ -147,38 +147,17 @@ export function Footer() {
               Connect
             </h3>
             <ul className="space-y-5">
-              <li className="flex gap-4">
-                <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-amber/10">
-                  <MapPinIcon className="size-4 text-amber" />
-                </div>
-                <span className="text-sm leading-relaxed text-white/60 mt-1">
-                  2415 SOUTH HOWELL A VE,<br />MILWAUKEE, WI 53207,<br />United States of America
-                </span>
-              </li>
               <li>
                 <Link
-                  href="tel:+18022420583"
-                  title="Call 802 242 0583"
-                  className="flex items-center gap-4 group"
+                  href={siteContact.phoneHref}
+                  title={`Call ${siteContact.phoneDisplay}`}
+                  className="flex min-h-11 w-full items-center gap-4 rounded-lg py-2 pr-2 group active:opacity-90"
                 >
                   <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-amber/10 transition-colors group-hover:bg-amber group-hover:text-black text-amber">
                     <PhoneIcon className="size-4" />
                   </div>
-                  <span className="text-sm text-white/60 transition-colors group-hover:text-amber">
-                    802 242 0583
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="mailto:query@primeautodeals.live"
-                  className="flex items-center gap-4 group"
-                >
-                  <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-amber/10 transition-colors group-hover:bg-amber group-hover:text-black text-amber">
-                    <MailIcon className="size-4" />
-                  </div>
-                  <span className="text-sm text-white/60 transition-colors group-hover:text-amber">
-                    query@primeautodeals.live
+                  <span className="text-sm font-medium text-white/60 transition-colors group-hover:text-amber">
+                    {siteContact.phoneDisplay}
                   </span>
                 </Link>
               </li>
