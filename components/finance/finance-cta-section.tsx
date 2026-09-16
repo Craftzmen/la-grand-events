@@ -36,7 +36,7 @@ export function FinanceCtaSection() {
               <a
                 href={financeContact.phoneHref}
                 title={`Call ${financeContact.phoneDisplay}`}
-                className="inline-flex min-h-11 w-full items-center justify-center gap-2.5 rounded-none bg-emerald-500 px-8 py-4 text-[15px] font-bold text-white shadow-[0_4px_28px_rgba(16,185,129,0.45)] ring-2 ring-emerald-300/40 transition-all hover:-translate-y-1 hover:bg-emerald-400 active:opacity-90 sm:w-auto"
+                className="inline-flex min-h-11 w-full items-center justify-center gap-2.5 rounded-full bg-emerald-500 px-8 py-4 text-[15px] font-bold text-white shadow-[0_4px_28px_rgba(16,185,129,0.45)] ring-2 ring-emerald-300/40 transition-all hover:-translate-y-1 hover:bg-emerald-400 active:opacity-90 sm:w-auto"
               >
                 <PhoneCall className="h-4 w-4" />
                 {financeContact.phoneDisplay}

@@ -122,7 +122,7 @@ export function FinancePopup() {
                   <a
                     href={financeContact.phoneHref}
                     title={`Call ${financeContact.phoneDisplay}`}
-                    className="relative flex min-h-11 w-full flex-col items-center justify-center rounded-none bg-emerald-500 px-4 py-3 text-white shadow-[0_4px_28px_rgba(16,185,129,0.45)] ring-2 ring-emerald-300/40 transition-all hover:scale-[1.02] hover:bg-emerald-400 active:scale-95 sm:px-6 sm:py-4"
+                    className="relative flex min-h-11 w-full flex-col items-center justify-center rounded-full bg-emerald-500 px-4 py-3 text-white shadow-[0_4px_28px_rgba(16,185,129,0.45)] ring-2 ring-emerald-300/40 transition-all hover:scale-[1.02] hover:bg-emerald-400 active:scale-95 sm:px-6 sm:py-4"
                   >
                     <div className="flex items-center gap-2.5 sm:gap-3.5">
                       <span className="text-xl font-black tracking-tighter sm:text-2xl">
