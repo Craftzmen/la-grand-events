@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Navbar } from "@/components/layout/navbar"
+import { CallNowBar } from "@/components/layout/call-now-bar"
 import { Footer } from "@/components/layout/footer"
 import { cn } from "@/lib/utils"
 
@@ -59,8 +60,9 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <Navbar />
-          <main className="min-h-screen">{children}</main>
+          <main className="min-h-screen pb-28">{children}</main>
           <Footer />
+          <CallNowBar />
         </ThemeProvider>
       </body>
     </html>

@@ -42,7 +42,7 @@ export function FinancePopup() {
           }}
           exit={{ opacity: 0, y: 50, x: isMobile ? 0 : 50, scale: 0.9 }}
           transition={{ type: "spring", damping: 25, stiffness: 200 }}
-          className={`fixed bottom-4 right-4 z-[90] flex max-h-[calc(100vh-32px)] flex-col border border-white/10 shadow-[0_30px_70px_rgba(0,0,0,0.7)] sm:bottom-6 sm:right-6 ${
+          className={`fixed bottom-[5.75rem] right-4 z-[90] flex max-h-[calc(100vh-7rem)] flex-col border border-white/10 shadow-[0_30px_70px_rgba(0,0,0,0.7)] sm:bottom-[6.25rem] sm:right-6 ${
             isMinimized ? "rounded-full p-0" : "rounded-none bg-zinc-950/95 backdrop-blur-3xl"
           }`}
         >
