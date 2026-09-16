@@ -51,7 +51,7 @@ export function FinancePopup() {
               layoutId="popup-container"
               href={financeContact.phoneHref}
               title={`Call ${financeContact.phoneDisplay}`}
-              className="relative flex h-14 w-14 min-h-14 min-w-14 items-center justify-center rounded-full bg-amber text-black shadow-lg transition-transform hover:scale-110 active:scale-95 sm:h-16 sm:w-16"
+              className="relative flex h-14 w-14 min-h-14 min-w-14 items-center justify-center rounded-full bg-emerald-500 text-white shadow-[0_4px_24px_rgba(16,185,129,0.55)] ring-2 ring-emerald-300/50 transition-transform hover:scale-110 hover:bg-emerald-400 active:scale-95 sm:h-16 sm:w-16"
             >
               <Phone className="h-6 w-6 sm:h-7 sm:w-7" />
               <span className="absolute right-0 top-0 flex h-4 w-4 sm:h-5 sm:w-5">
@@ -118,19 +118,19 @@ export function FinancePopup() {
                 </div>
 
                 <div className="group relative pt-0.5 sm:pt-1">
-                  <div className="absolute -inset-1 rounded-none bg-gradient-to-r from-amber to-amber-dark opacity-20 blur-md transition duration-1000 group-hover:opacity-50 group-hover:duration-200" />
+                  <div className="absolute -inset-1 rounded-none bg-gradient-to-r from-emerald-500 to-emerald-600 opacity-30 blur-md transition duration-1000 group-hover:opacity-60 group-hover:duration-200" />
                   <a
                     href={financeContact.phoneHref}
                     title={`Call ${financeContact.phoneDisplay}`}
-                    className="relative flex min-h-11 w-full flex-col items-center justify-center rounded-none bg-amber px-4 py-3 transition-all hover:scale-[1.02] hover:bg-amber-light active:scale-95 sm:px-6 sm:py-4"
+                    className="relative flex min-h-11 w-full flex-col items-center justify-center rounded-none bg-emerald-500 px-4 py-3 text-white shadow-[0_4px_28px_rgba(16,185,129,0.45)] ring-2 ring-emerald-300/40 transition-all hover:scale-[1.02] hover:bg-emerald-400 active:scale-95 sm:px-6 sm:py-4"
                   >
                     <div className="flex items-center gap-2.5 sm:gap-3.5">
-                      <span className="text-xl font-black tracking-tighter text-black sm:text-2xl">
+                      <span className="text-xl font-black tracking-tighter sm:text-2xl">
                         {financeContact.phoneDisplay}
                       </span>
-                      <Phone className="h-4.5 w-4.5 animate-pulse text-black sm:h-5 sm:w-5" />
+                      <Phone className="h-4.5 w-4.5 animate-pulse sm:h-5 sm:w-5" />
                     </div>
-                    <p className="mt-1 text-[8px] font-black uppercase tracking-[0.4em] text-black/50 sm:text-[9px]">
+                    <p className="mt-1 text-[8px] font-black uppercase tracking-[0.4em] text-emerald-100 sm:text-[9px]">
                       Call Right Now
                     </p>
                   </a>
