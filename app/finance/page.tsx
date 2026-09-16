@@ -9,6 +9,8 @@ import { ApprovalTimelineSection } from "@/components/finance/approval-timeline-
 import { FinanceFaqSection } from "@/components/finance/finance-faq-section"
 import { FinanceCtaSection } from "@/components/finance/finance-cta-section"
 import { FinancePopup } from "@/components/finance/finance-popup"
+import { CallNowBar } from "@/components/layout/call-now-bar"
+import { financeContact } from "@/lib/finance-contact"
 
 export const metadata: Metadata = {
   title: "Car Finance and Loan Support | La Grand Events",
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
 
 export default function FinancePage() {
   return (
-    <>
+    <div className="pb-28">
       <PageHeader
         title="Finance"
         breadcrumbs={[
@@ -58,6 +60,7 @@ export default function FinancePage() {
       <FinanceFaqSection />
       <FinanceCtaSection />
       <FinancePopup />
-    </>
+      <CallNowBar phoneHref={financeContact.phoneHref} phoneDisplay={financeContact.phoneDisplay} />
+    </div>
   )
 }
